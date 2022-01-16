@@ -1,0 +1,29 @@
+/** @format */
+
+.footer {
+  margin-top: 35px;
+  position: relative;
+  z-index: 100;
+  animation-name: elemLink;
+  animation-duration: 1000ms;
+  animation-delay: 2000ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  &__link {
+    &__img {
+      margin: 0 auto;
+      width: 127px;
+      height: 20px;
+    }
+  }
+}
+
+@keyframes elemLink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

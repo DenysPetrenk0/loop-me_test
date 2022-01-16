@@ -1,0 +1,35 @@
+/** @format */
+
+.button {
+  border-color: transparent;
+  background: transparent;
+  animation-name: elemButton;
+  animation-duration: 1000ms;
+  animation-delay: 2000ms;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+  &:first-child {
+    margin-left: 18px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 260px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 30px;
+  }
+}
+
+@keyframes elemButton {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

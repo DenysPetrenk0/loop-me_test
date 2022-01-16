@@ -1,0 +1,64 @@
+/** @format */
+
+.header {
+  position: relative;
+  margin-bottom: 55px;
+  animation-name: headerY;
+  animation-duration: 1000ms;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  &__tagline-back {
+    width: 350px;
+    height: 215px;
+  }
+
+  &__new {
+    position: absolute;
+    top: 0;
+    left: 32px;
+    width: 65px;
+    height: 35px;
+    animation-name: headerY;
+    animation-duration: 1000ms;
+    animation-delay: 1500ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+
+  &__tagline {
+    position: absolute;
+    top: 84px;
+    left: 40px;
+    width: 264px;
+    height: 91px;
+    animation-name: elemHeader;
+    animation-duration: 1000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes headerY {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes elemHeader {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
