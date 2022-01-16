@@ -14,12 +14,22 @@
   }
 
   &:not(:last-child) {
-    margin-right: 260px;
+    margin-right: 280px;
   }
 
   &__icon {
     width: 20px;
     height: 30px;
+  }
+
+  @media screen and (min-width: 414px) {
+    &__icon {
+      width: 30px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 270px;
+    }
   }
 }
 

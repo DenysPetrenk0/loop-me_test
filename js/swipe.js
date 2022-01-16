@@ -1,8 +1,6 @@
 /** @format */
 
-import move from "./move.js";
 import nextMove from "./next.js";
-import nextMoveOption from "./nextMoveOption copy.js";
 import prevMove from "./prev.js";
 
 let xStart = null;
@@ -23,7 +21,7 @@ export const handleTouchMove = (event) => {
   if (diff < 0) {
     prevMove();
   } else {
-    move(nextMoveOption);
+    nextMove();
   }
 
   xStart = null;

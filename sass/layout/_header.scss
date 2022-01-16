@@ -39,6 +39,32 @@
     animation-fill-mode: forwards;
     opacity: 0;
   }
+
+  @media screen and (min-width: 414px) {
+    margin-bottom: 100px;
+
+    &__tagline-back {
+      width: 414px;
+      height: 293px;
+    }
+
+    &__tagline {
+      top: 123px;
+      left: 43px;
+      width: 315px;
+      height: 131px;
+    }
+
+    &__new {
+      left: 32px;
+      width: 82px;
+      height: 59px;
+    }
+  }
+
+  @media screen and (min-width: 415px) {
+    display: none;
+  }
 }
 
 @keyframes headerY {

@@ -17,6 +17,21 @@
       height: 20px;
     }
   }
+
+  @media screen and (min-width: 414px) {
+    margin-top: 50px;
+
+    &__link {
+      &__img {
+        width: 153px;
+        height: 30px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 415px) {
+    display: none;
+  }
 }
 
 @keyframes elemLink {

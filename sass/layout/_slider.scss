@@ -25,6 +25,10 @@
 
   &__item {
     min-width: 100%;
+
+    &__img {
+      width: 208px;
+    }
   }
 
   &__buttons {
@@ -54,7 +58,6 @@
         left: -37px;
         height: 195px;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
 
       &-peach {
@@ -63,7 +66,6 @@
         left: 12px;
         height: 157px;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
 
@@ -84,7 +86,6 @@
         height: 152px;
         z-index: 1;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
 
       &-peach {
@@ -94,7 +95,6 @@
         height: 152px;
         z-index: 1;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
 
@@ -115,7 +115,6 @@
         height: 176px;
         z-index: 1;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
 
@@ -136,7 +135,6 @@
         height: 159px;
         z-index: 1;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
 
@@ -157,7 +155,6 @@
         height: 81px;
         z-index: 1;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
 
@@ -178,7 +175,6 @@
         height: 118px;
         z-index: 1;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
 
@@ -190,7 +186,6 @@
         height: 79px;
         z-index: 0;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
 
@@ -202,9 +197,128 @@
         height: 71px;
         z-index: 1;
         @extend .animation-elem;
-        animation-name: 500ms;
       }
     }
+  }
+
+  @media screen and (min-width: 414px) {
+    &__container {
+      width: 270px;
+    }
+    &__item__img {
+      width: 270px;
+    }
+    &__img {
+      &__first {
+        &-pepermint {
+          left: -70px;
+          height: 168px;
+        }
+
+        &-raspberry {
+          top: -160px;
+          left: -53px;
+          height: 250px;
+        }
+
+        &-peach {
+          top: 146px;
+          left: -18px;
+          height: 202px;
+        }
+      }
+
+      &__second {
+        &-pepermint {
+          left: 246px;
+          height: 183px;
+        }
+
+        &-raspberry {
+          top: -64px;
+          left: 214px;
+          height: 191px;
+        }
+
+        &-peach {
+          top: -81px;
+          left: 227px;
+          height: 201px;
+        }
+      }
+
+      &__third {
+        &-pepermint {
+          top: 125px;
+          left: -12px;
+          height: 225px;
+        }
+
+        &-raspberry {
+          top: 145px;
+          left: -8px;
+          height: 212px;
+        }
+      }
+
+      &__fourth {
+        &-pepermint {
+          top: 238px;
+          left: 333px;
+          height: 47px;
+        }
+
+        &-raspberry {
+          top: 11px;
+          left: 250px;
+          height: 197px;
+        }
+      }
+
+      &__fifth {
+        &-pepermint {
+          top: 120px;
+          left: 381px;
+          height: 61px;
+        }
+
+        &-raspberry {
+          height: 105px;
+        }
+      }
+
+      &__sixth {
+        &-pepermint {
+          top: 271px;
+          left: 300px;
+          height: 145px;
+        }
+
+        &-raspberry {
+          top: -77px;
+          left: 325px;
+        }
+      }
+
+      &__seventh {
+        &-raspberry {
+          top: 133px;
+          left: 288px;
+        }
+      }
+
+      &__eighth {
+        &-raspberry {
+          top: -20px;
+          left: 38px;
+          height: 98px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 415px) {
+    display: none;
   }
 }
 

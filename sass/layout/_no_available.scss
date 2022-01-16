@@ -1,0 +1,14 @@
+/** @format */
+
+.no_available {
+  display: none;
+
+  &__img {
+    min-width: 559px;
+    min-height: 337px;
+  }
+
+  @media screen and (min-width: 415px) {
+    display: block;
+  }
+}

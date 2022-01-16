@@ -1,10 +1,5 @@
 /** @format */
 
-// 0 - null;
-// 1 - raspberry;
-// 2 - peach;
-// 3 - pepermint;
-
 export const bgNext = [
   null,
   "../image/raspberry-BG.jpg",

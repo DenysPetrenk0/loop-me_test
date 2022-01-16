@@ -1,6 +1,5 @@
 /** @format */
 
-import move from "./move.js";
 import nextMove from "./next.js";
 import prevMove from "./prev.js";
 import { button } from "./refs.js";
